@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoloCrop | Smart Farming Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fef9;
+      color: #2f4f2f;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    .logo {
+      max-height: 100px;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #388E3C;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.3s;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .features, .team, .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #c8e6c9;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .lang-note {
+      font-style: italic;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Untitled design (1).png" alt="SoloCrop Logo" class="logo" />
+    <h1>SoloCrop</h1>
+    <p class="tagline">Farming made smarter with AI.<br>अब खेती होगी स्मार्ट। আধুনিক কৃষি এখন হাতের মুঠোয়।</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#team">Team</a>
+    <a href="#tech">Technology</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome / स्वागत है / স্বাগতম</h2>
+    <p>
+      Welcome to SoloCrop – your digital companion for smart farming.<br>
+      अब खेती होगी स्मार्ट।<br>
+      আধুনিক কৃষি এখন হাতের মুঠোয়।
+    </p>
+    <p class="lang-note">(App interface and training coming soon in Hindi and Bengali)</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features / मुख्य विशेषताएँ / বৈশিষ্ট্য</h2>
+    <div class="features">
+      <div class="card">🌱 Real-time farm monitoring with IoT sensors<br>रीयल-टाइम खेती की निगरानी / রিয়েল-টাইম পর্যবেক্ষণ</div>
+      <div class="card">🤖 AI crop recommendations<br>फसल के लिए AI सुझाव / কৃত্রিম বুদ্ধিমত্তার সুপারিশ</div>
+      <div class="card">☁️ Weather & pest alerts<br>मौसम और कीट अलर्ट / আবহাওয়া ও পোকামাকড় সতর্কতা</div>
+      <div class="card">🎥 Training videos in local languages<br>स्थानीय भाषाओं में ट्रेनिंग वीडियो / স্থানীয় ভাষায় প্রশিক্ষণ ভিডিও</div>
+      <div class="card">🎙️ Voice input in Hindi & Bengali<br>हिंदी और बंगाली में वॉइस इनपुट / বাংলায় ও হিন্দিতে ভয়েস ইনপুট</div>
+      <div class="card">🌐 Multilingual interface<br>बहुभाषी इंटरफ़ेस / বহুভাষিক ইন্টারফেস</div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <h2>Technology Stack / तकनीकी ढांचा / প্রযুক্তিগত কাঠামো</h2>
+    <div class="tech-stack">
+      <div class="card">📱 React Native App<br>रीऐक्ट नेटिव ऐप / রিঅ্যাক্ট নেটিভ অ্যাপ</div>
+      <div class="card">☁️ Firebase & AWS Backend<br>फायरबेस और AWS बैकएंड / ফায়ারবেস ও AWS ব্যাকএন্ড</div>
+      <div class="card">🧪 IoT Sensors<br>आईओटी सेंसर / আইওটি সেন্সর</div>
+      <div class="card">🧠 AI & ML Crop Predictions<br>AI/ML फसल भविष्यवाणी / AI/ML ফসল ভবিষ্যদ্বাণী</div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Meet the Team / हमारी टीम / আমাদের দল</h2>
+    <div class="team">
+      <div class="card">Sneha – Project Lead & IoT Expert</div>
+      <div class="card">Preet – Strategic Planner & Analyst</div>
+      <div class="card">Sumit – AI/ML Developer</div>
+      <div class="card">Souradip – UI/UX & App Architect</div>
+      <div class="card">Atanu – Backend & Cloud Developer</div>
+      <div class="card">Mohak – Agri Research & Sensor Integration</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us / संपर्क करें / যোগাযোগ করুন</h2>
+    <p>Email: <a href="mailto:solocrop.team@gmail.com">solocrop.team@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 SoloCrop | Built with ❤️ in India
+  </footer>
+</body>
+</html>
